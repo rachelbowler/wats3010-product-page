@@ -22,53 +22,93 @@
 
     </head>
     <body>
-        <!-- Note: If you do not see a camera icon in the heading below
-             when you view this file in a web browser, then there is an issue
-             with how FontAwesome is linked to this page. -->
-        <h1><span class="fas fa-camera-retro"></span> Glassybaby</h1>
-        <body>
-          <!-- Here is our main header that is used across all the pages of our website -->
-      
-          <header>
-            <h1>Header</h1>
-          </header>
-      
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Our team</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-      
-             <!-- A Search form is another commmon non-linear way to navigate through a website. -->
-      
-             <form>
-               <input type="search" name="q" placeholder="Search query">
-               <input type="submit" value="Go!">
-             </form>
-           </nav>
-      
-          <!-- Here is our page's main content -->
-          <main>
-               <html>
-                    <head>
-          
-                    </head>
-                    <body>
-                    
                     <div class="header">
-                      <h1>My Website</h1>
-                      <p>Resize the browser window to see the effect.</p>
+                      <h1>glassybaby</h1>
                     </div>
                     
                     <div class="topnav">
-                      <a href="#">Link</a>
-                      <a href="#">Link</a>
-                      <a href="#">Link</a>
-                      <a href="#" style="float:right">Link</a>
+                      <a href="#">Shop</a>
+                      <a href="#">Giving</a>
+                      <a href="#">About Us</a>
+                      <a href="#" style="float:right">Cart</a>
                     </div>
-                    
+                    <form>
+                         <input type="search" name="q" placeholder="Search">
+                         <input type="submit">
+                       </form>
+
+             
+                       <!DOCTYPE html>
+                       <html>
+                       <head>
+                       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                       </head>
+                 <!-- slideshow -->
+        
+                       <body>
+                       
+                       <div class="slideshow-container">
+                       
+                       <div class="mySlides fade">
+                         <img src="images/image-5.jpg" style="width:100%">
+                       </div>
+                       
+                       <div class="mySlides fade">
+                         <img src="images/handblown-rod.jpg" style="width:100%">
+                       </div>
+                       
+                       <div class="mySlides fade">
+                         <img src="images/pic-1.jpg" style="width:100%">
+                       </div>
+                       
+                       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                       
+                       </div>
+                       <br>
+                       
+                       <div style="text-align:center">
+                         <span class="dot" onclick="currentSlide(1)"></span> 
+                         <span class="dot" onclick="currentSlide(2)"></span> 
+                         <span class="dot" onclick="currentSlide(3)"></span> 
+                       </div>
+                       
+                       <script>
+                       var slideIndex = 1;
+                       showSlides(slideIndex);
+                       
+                       function plusSlides(n) {
+                         showSlides(slideIndex += n);
+                       }
+                       
+                       function currentSlide(n) {
+                         showSlides(slideIndex = n);
+                       }
+                       
+                       function showSlides(n) {
+                         var i;
+                         var slides = document.getElementsByClassName("mySlides");
+                         var dots = document.getElementsByClassName("dot");
+                         if (n > slides.length) {slideIndex = 1}    
+                         if (n < 1) {slideIndex = slides.length}
+                         for (i = 0; i < slides.length; i++) {
+                             slides[i].style.display = "none";  
+                         }
+                         for (i = 0; i < dots.length; i++) {
+                             dots[i].className = dots[i].className.replace(" active", "");
+                         }
+                         slides[slideIndex-1].style.display = "block";  
+                         dots[slideIndex-1].className += " active";
+                       }
+                       </script>
+                       
+                       </body>
+                       </html> 
+                       
+                       
+
+
                     <div class="row">
                       <div class="leftcolumn">
                         <div class="card">
@@ -131,26 +171,14 @@
       
               <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
             </article>
-      
-            <!-- the aside content can also be nested within the main content -->
-            <aside>
-              <h2>Related</h2>
-      
-              <ul>
-                <li><a href="#">Oh I do like to be beside the seaside</a></li>
-                <li><a href="#">Oh I do like to be beside the sea</a></li>
-                <li><a href="#">Although in the North of England</a></li>
-                <li><a href="#">It never stops raining</a></li>
-                <li><a href="#">Oh well...</a></li>
-              </ul>
-            </aside>
+  
       
           </main>
       
           <!-- And here is our main footer that is used across all the pages of our website -->
       
           <footer>
-            <p>©Copyright 2050 by nobody. All rights reversed.</p>
+            <p>©Copyright 2019</p>
           </footer>
       
         </body>

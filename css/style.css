@@ -216,3 +216,43 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 </style>
+
+
+/* video */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video,
+iframe {
+  border: 5px solid grey;
+}
+
+article {
+  margin: 1rem 0;
+}
+
+footer a,
+footer p {
+  color: white;
+}

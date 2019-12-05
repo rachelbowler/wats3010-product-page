@@ -1,154 +1,126 @@
-<!doctype html>
-<html>
-    <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <meta name="description" content="Glassy Baby">
-          <meta name="author" content="Rachel Bowler">
-          <title>Glassy Baby</title>
-        <!-- Bootstrap CSS Framework -->
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <!-- End Bootstrap CSS Framework -->
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- FontAwesome (https://fontawesome.com/how-to-use/svg-with-js#basic-use) -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>glassybaby</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
-             support bookmarking. -->
-        
-          <link rel="icon" type="image/png" href="favicon.png">
+</head>
 
-    </head>
-    <body>
-                    <div class="header">
-                      <h1>glassybaby</h1>
-                    </div>
-                    
-                    <div class="topnav">
-                      <a href="#">Shop</a>
-                      <a href="#">Giving</a>
-                      <a href="#">About Us</a>
-                      <a href="#" style="float:right">Cart</a>
-                    </div>
-                    <form>
-                         <input type="search" name="q" placeholder="Search">
-                         <input type="submit">
-                       </form>
+<body>
+   
+    <nav class="w3-bar w3-black">
+      <div class="heading"
+        <a href="#glassybaby" class="w3-button w3-bar-item">glassybaby</a>
+      </div>
+        <a href="#home" class="w3-button w3-bar-item">Home</a>
+        <a href="#shop" class="w3-button w3-bar-item">Shop</a>
+        <a href="#giving" class="w3-button w3-bar-item">Giving</a>
+        <a href="about.html" class="w3-button w3-bar-item">About Us</a>
+ 
+      </nav>
+    
 
-             
-                       <!DOCTYPE html>
-                       <html>
-                       <head>
-                       <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Slide Show -->    
+    <section>
+        <img class="mySlides" src="images/madrona-1.jpg" style="width:100%">
+        <img class="mySlides" src="images/madrona-3.jpg" style="width:100%">
+        <img class="mySlides" src="images/gb2.jpg" style="width:100%">
+    </section>
 
-                       </head>
-                 <!-- slideshow -->
-        
-                       <body>
-                       
-                       <div class="slideshow-container">
-                       
-                       <div class="mySlides fade">
-                         <img src="images/image-5.jpg" style="width:100%">
-                       </div>
-                       
-                       <div class="mySlides fade">
-                         <img src="images/glass-blowing-27.jpg" style="width:100%">
-                       </div>
-                       
-                       <div class="mySlides fade">
-                         <img src="images/pic-1.jpg" style="width:100%">
-                       </div>
-                       
-                       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                       
-                       </div>
-                       <br>
-                       
-                       <div style="text-align:center">
-                         <span class="dot" onclick="currentSlide(1)"></span> 
-                         <span class="dot" onclick="currentSlide(2)"></span> 
-                         <span class="dot" onclick="currentSlide(3)"></span> 
-                       </div>
-                       
-                       <script>
-                       var slideIndex = 1;
-                       showSlides(slideIndex);
-                       
-                       function plusSlides(n) {
-                         showSlides(slideIndex += n);
-                       }
-                       
-                       function currentSlide(n) {
-                         showSlides(slideIndex = n);
-                       }
-                       
-                       function showSlides(n) {
-                         var i;
-                         var slides = document.getElementsByClassName("mySlides");
-                         var dots = document.getElementsByClassName("dot");
-                         if (n > slides.length) {slideIndex = 1}    
-                         if (n < 1) {slideIndex = slides.length}
-                         for (i = 0; i < slides.length; i++) {
-                             slides[i].style.display = "none";  
-                         }
-                         for (i = 0; i < dots.length; i++) {
-                             dots[i].className = dots[i].className.replace(" active", "");
-                         }
-                         slides[slideIndex-1].style.display = "block";  
-                         dots[slideIndex-1].className += " active";
-                       }
-                       </script>
-                       
-                       </body>
-                       </html> 
+<!-- Power of Giving --> 
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">The Power of Giving</h2>
+        <p class="w3-opacity"><i>white light fund</i></p>
+        <p class="w3-justify">glassybaby was founded in Seattle, Washington in 2001 by three time cancer survivor Lee Rhodes. during chemotherapy, Lee met many patients who could not afford their basic needs during treatment. when lee founded glassybaby, it was with the core mission of helping to alleviate these struggles. this year, glassybaby will donate their $10 millionth dollar to non-profit organizations that provide hope and healing. our journey has only just begun. seeing how far this giving community has come, just imagine where this precious vessel will take us tomorrow.</p>
+        <a href="https://www.glassybaby.com/glassybaby"><button>Buy One</button></a>
+      </section>
 
-                    <div class="row">
-                      <div class="column">
-                        <div class="card">
+<!-- Values --> 
+      <section class="w3-container w3-row-padding w3-center">
+          <h3 class="w3-wide">Our Values</h3>
+        <article class="w3-third">
+          <img src="images/cherish-candle-holder-votive_l-2.jpg" style="width:100%">
+          <p>Giving</p>
+        </article>
+        <article class="w3-third">
+          <img src="images/home-candle-holder-votive_l-2.jpg" style="width:100%">
+          <p>Family</p>
+        </article>
+        <article class="w3-third">
+          <img src="images/hero-candle-holder-votive_l-2-resize.jpg" style="width:100%">
+          <p>Sustainability</p>
+        </article>
+      </section>
+       
+      <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <p class="w3-justify">Giving: the reason glassybaby exists is to give.</p>
+            <p class="w3-justify">Family: we are a community of kindness. Everyone is welcome. Just bring a story.</p>
+            <p class="w3-justify">Sustainability: our handblown glass products are made from the earth, and we are committed to protecting it.</p>
+      </section>
 
-                          <p>Glassybaby is an unique piece of hand-blown glass art crafted to support causes of hope and healing; a beautiful vessel to hold, color, and amplify the light of a candle</p>
-                        </div>
-                      </div>
+   <!-- video -->    
+   <div class="video" style="text-align: center;">
+      <iframe style="float: center;" width="560" height="315" src="https://www.youtube.com/embed/vlbAY5nFU5U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+  </div>
 
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/vlbAY5nFU5U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <div class="row">
-                          <div class="column">
-                        <div class="card">
-                          <p>Within our hot shops in Seattle, more than 80 glassblowers inspired by your stories, devote themselves to handcrafting each unique glassybaby from sand to hand to heart</p>
-                        </div>
-                      </div>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">The Process</h2>
+        <p class="w3-justify">Within our hot shops in Seattle and Berkeley, more than 80 glassblowers inspired by your stories, devote themselves to handcrafting each unique glassybaby, from sand to hand to heart. It looks like a dance with heat and light. glassblowers step and dip, blow, spin, and roll the molten glass that will become a glassybaby. But when you watch a while, you notice how each glassblower plays a role in the dance.</p>
+</section>
 
-                    </body>
-                    
-          
-      </html>
-        <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
 
-        <!-- TODO: Create an area to put the explainer video. -->
+<!-- Footer --> 
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <button>Subscribe</button>
+  <a href="https://www.facebook.com/glassybaby/"><i class="fa fa-facebook-official"></i></a>
 
-        <!-- TODO: Create an area to put the long product description. -->
+    <a href="https://www.instagram.com/glassybaby/"><i class="fa fa-instagram"></i></a>
 
-        <!-- TODO: Create an area to put customer testimonials. -->
+    <a href="https://twitter.com/glassybaby"><i class="fa fa-twitter"></i></a>
+    <p class="w3-medium">
+    
+    <p class="footer-item-flex text-white">Copyright &copy; glassybaby</p>
+ </p>
 
-        <!-- TODO: Create an area to show features. -->
 
-        <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
 
-        <!-- TODO: Create an area that allows users to Share links to the
-             page. -->
+</footer>
 
-        <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    </body>
+    <script>
+      // Automatic Slideshow - change image every 3 seconds
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+    </script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
 </html>
